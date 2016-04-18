@@ -93,53 +93,53 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 	}
 	
 	private void InitCiMenu(){
-		mnCiph=new JMenu("Шифратор");
+		mnCiph=new JMenu("РЁРёС„СЂР°С‚РѕСЂ");
 
 		mnCiph.setMnemonic(KeyEvent.VK_A);
 		mnCiph.getAccessibleContext().setAccessibleDescription(
-		        "Меню для работы с блоком шифрования (верхний редактор)");
+		        "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)");
 		
 		//add(mnCiph);
 		
-		sbmCSipher=new JMenuItem("Зашифровать", KeyEvent.VK_S);
+		sbmCSipher=new JMenuItem("РЁРёС„СЂРѕРІР°С‚СЊ", KeyEvent.VK_S);
 		sbmCSipher.setActionCommand("cipher");
 		sbmCSipher.setAccelerator(KeyStroke.getKeyStroke(
 		KeyEvent.VK_S, ActionEvent.ALT_MASK));
 		sbmCSipher.getAccessibleContext().setAccessibleDescription(
-				"Шифрует текст в верхнем редакторе выбранным алгоритмом");
+				"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmCSipher.addActionListener(this);
 		mnCiph.add(sbmCSipher);
 
-		sbmCUndo=new JMenuItem("Отменить", KeyEvent.VK_Z);
+		sbmCUndo=new JMenuItem("РћС‚РјРµРЅРёС‚СЊ", KeyEvent.VK_Z);
 		sbmCUndo.setActionCommand("ci_undo");
 		sbmCUndo.setAccelerator(KeyStroke.getKeyStroke(
 		KeyEvent.VK_Z, ActionEvent.ALT_MASK));
 		sbmCUndo.getAccessibleContext().setAccessibleDescription(
-				"Отмена последнего действия");
+				"пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmCUndo.addActionListener(this);
 		mnCiph.add(sbmCUndo);
 		
 		mnCiph.addSeparator();
 		
-		sbmCNew=new JMenuItem("Новый", KeyEvent.VK_N);
+		sbmCNew=new JMenuItem("РќРѕРІС‹Р№", KeyEvent.VK_N);
 		sbmCNew.setActionCommand("ci_new");
 		sbmCNew.getAccessibleContext().setAccessibleDescription(
-				"Новый файл в верхнем редакторе");
+				"пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmCNew.addActionListener(this);
 		mnCiph.add(sbmCNew);
 		
-		sbmCOpen=new JMenuItem("Открыть", KeyEvent.VK_O);
+		sbmCOpen=new JMenuItem("РћС‚РєСЂС‹С‚СЊ", KeyEvent.VK_O);
 		sbmCOpen.setActionCommand("ci_open");
 		sbmCOpen.getAccessibleContext().setAccessibleDescription(
-				"Открыть файл в верхнем редакторе");
+				"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmCOpen.addActionListener(this);
 		mnCiph.add(sbmCOpen);
 		
 		
-		sbmCSave=new JMenuItem("Сохранить", KeyEvent.VK_O);
+		sbmCSave=new JMenuItem("РЎРѕС…СЂР°РЅРёС‚СЊ", KeyEvent.VK_O);
 		sbmCSave.setActionCommand("ci_save");
 		sbmCSave.getAccessibleContext().setAccessibleDescription(
-				"Открыть файл в верхнем редакторе");
+				"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmCSave.addActionListener(this);
 		mnCiph.add(sbmCSave);
 		
@@ -147,10 +147,10 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 	}	
 	
 	private void InitExMenu(){
-		mnExit=new JMenuItem("Выxод", KeyEvent.VK_X);
+		mnExit=new JMenuItem("Р’С‹xРѕРґ", KeyEvent.VK_X);
 		mnExit.setActionCommand("exit");
 		mnExit.getAccessibleContext().setAccessibleDescription(
-		        "Выход из программы");
+		        "пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		mnExit.setAccelerator(KeyStroke.getKeyStroke(
 				KeyEvent.VK_X, ActionEvent.ALT_MASK));
 		mnExit.addActionListener(this);
@@ -159,51 +159,51 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 	}
 	
 	private void InitDeMenu(){
-		mnDeCiph=new JMenu("Дешифратор");
+		mnDeCiph=new JMenu("Р”РµС€РёС„СЂР°С‚РѕСЂ");
 
 		mnDeCiph.setMnemonic(KeyEvent.VK_A);
 		mnDeCiph.getAccessibleContext().setAccessibleDescription(
-		        "Меню для работы с блоком дешифрования (нижний редактор)");
+		        "пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)");
 		
-		sbmDeSipher=new JMenuItem("Дешифровать", KeyEvent.VK_D);
+		sbmDeSipher=new JMenuItem("Р”РµС€РёС„СЂРѕРІР°С‚СЊ", KeyEvent.VK_D);
 		sbmDeSipher.setActionCommand("decipher");
 		sbmDeSipher.setAccelerator(KeyStroke.getKeyStroke(
 		KeyEvent.VK_D, ActionEvent.ALT_MASK));
 		sbmDeSipher.getAccessibleContext().setAccessibleDescription(
-				"Дешифрует текст в нижнем редакторе выбранным алгоритмом");
+				"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmDeSipher.addActionListener(this);
 		mnDeCiph.add(sbmDeSipher);
 
-		sbmDUndo=new JMenuItem("Отменить", KeyEvent.VK_U);
+		sbmDUndo=new JMenuItem("РћС‚РјРµРЅРёС‚СЊ", KeyEvent.VK_U);
 		sbmDUndo.setActionCommand("de_undo");
 		sbmDUndo.setAccelerator(KeyStroke.getKeyStroke(
 		KeyEvent.VK_U, ActionEvent.ALT_MASK));
 		sbmDUndo.getAccessibleContext().setAccessibleDescription(
-				"Отмена последнего действия");
+				"пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmDUndo.addActionListener(this);
 		mnDeCiph.add(sbmDUndo);
 		
 		mnDeCiph.addSeparator();
 
-		sbmDNew=new JMenuItem("Новый", KeyEvent.VK_Y);
+		sbmDNew=new JMenuItem("РќРѕРІС‹Р№", KeyEvent.VK_Y);
 		sbmDNew.setActionCommand("de_new");
 		sbmDNew.getAccessibleContext().setAccessibleDescription(
-				"Новый файл в нижнем редакторе");
+				"пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmDNew.addActionListener(this);
 		mnDeCiph.add(sbmDNew);
 		
-		sbmDOpen=new JMenuItem("Открыть", KeyEvent.VK_I);
+		sbmDOpen=new JMenuItem("РћС‚РєСЂС‹С‚СЊ", KeyEvent.VK_I);
 		sbmDOpen.setActionCommand("de_open");
 		sbmDOpen.getAccessibleContext().setAccessibleDescription(
-				"Открыть файл в нижнем редакторе");
+				"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmDOpen.addActionListener(this);
 		mnDeCiph.add(sbmDOpen);
 		
 		
-		sbmDSave=new JMenuItem("Сохранить", KeyEvent.VK_J);
+		sbmDSave=new JMenuItem("РЎРѕС…СЂР°РЅРёС‚СЊ", KeyEvent.VK_J);
 		sbmDSave.setActionCommand("de_save");
 		sbmDSave.getAccessibleContext().setAccessibleDescription(
-				"Открыть файл в нижнем редакторе");
+				"пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmDSave.addActionListener(this);
 		mnDeCiph.add(sbmDSave);
 		
@@ -212,11 +212,11 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 	
 	private void InitSetMenu(){
 		
-		mnSett=new JMenu("Установки");
+		mnSett=new JMenu("РЈСЃС‚Р°РЅРѕРІРєРё");
 
 		mnSett.setMnemonic(KeyEvent.VK_A);
 		mnSett.getAccessibleContext().setAccessibleDescription(
-		        "Установки шифрования-дешифрования");
+		        "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		
 		//add(mnCiph);
 		
@@ -258,16 +258,16 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 		
 		mnSett.addSeparator();
 		
-		sbmInputKey=new JMenuItem("Ввести ключ", KeyEvent.VK_D);
+		sbmInputKey=new JMenuItem("Р’РІРµСЃС‚Рё РєР»СЋС‡", KeyEvent.VK_D);
 		sbmInputKey.setActionCommand("key");
 		//sbmInputKey.setAccelerator(KeyStroke.getKeyStroke(
 		//KeyEvent.VK_D, ActionEvent.ALT_MASK));
 		sbmInputKey.getAccessibleContext().setAccessibleDescription(
-				"Ввод ключа шифрования-дешифрования");
+				"пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ-пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 		sbmInputKey.addActionListener(this);
 		mnSett.add(sbmInputKey);
 		
-		sbmFixKey = new JCheckBoxMenuItem("Зафиксировать ключ");
+		sbmFixKey = new JCheckBoxMenuItem("Р—Р°С„РёРєСЃРёСЂРѕРІР°С‚СЊ РєР»СЋС‡");
 		//sbmFixKey.setMnemonic(KeyEvent.VK_C);
 		sbmFixKey.setActionCommand("fix_key");
 		sbmFixKey.addActionListener(this);

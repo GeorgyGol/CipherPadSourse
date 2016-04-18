@@ -113,7 +113,7 @@ public class JMainFrame extends JFrame implements JTopPaneListener, JMainMenuLis
 	}
 	
 	public JMainFrame() {
-		super("Шифроблокнот");
+		super("РЁРёС„СЂРѕР±Р»РѕРєРЅРѕС‚");
 		SetLook("Nimbus"); // Motif
 		// SetLook("CDE/Motif"); // Motif
 		//SetLook("Windows"); // Motif
@@ -122,7 +122,7 @@ public class JMainFrame extends JFrame implements JTopPaneListener, JMainMenuLis
 	}
 
 	private void showCipherError(String strMess){
-		JOptionPane.showMessageDialog(null, strMess, "ОШИБКА!!!",
+		JOptionPane.showMessageDialog(null, strMess, "пїЅпїЅпїЅпїЅпїЅпїЅ!!!",
 				 JOptionPane.ERROR_MESSAGE);
 	}
 	
@@ -228,7 +228,7 @@ public class JMainFrame extends JFrame implements JTopPaneListener, JMainMenuLis
 
 		String strKey=JOptionPane.showInputDialog("Please input a value"); 
 		if(strKey.isEmpty()){
-			showCipherError("Необходим ключь шифрования");
+			showCipherError("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
 			throw(new IllegalArgumentException());
 		}
 		strCiKey=strKey;

@@ -19,7 +19,7 @@ public class JHelpText extends JEditorPane  {
 		setEditable(false);
 		setContentType("text/html");
 		//setText(loadText());
-		java.net.URL helpURL = getClass().getResource("CipadHelp");
+		java.net.URL helpURL = getClass().getResource("CipadHelp.html");
 		Cipherpad.PrintDebug(helpURL.toString());
 		try {
 			//this.setPage(loadText());
