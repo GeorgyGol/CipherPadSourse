@@ -122,7 +122,7 @@ public class JMainFrame extends JFrame implements JTopPaneListener, JMainMenuLis
 	}
 
 	private void showCipherError(String strMess){
-		JOptionPane.showMessageDialog(null, strMess, "������!!!",
+		JOptionPane.showMessageDialog(null, strMess, "Ошибка!!!",
 				 JOptionPane.ERROR_MESSAGE);
 	}
 	
@@ -228,7 +228,7 @@ public class JMainFrame extends JFrame implements JTopPaneListener, JMainMenuLis
 
 		String strKey=JOptionPane.showInputDialog("Please input a value"); 
 		if(strKey.isEmpty()){
-			showCipherError("��������� ����� ����������");
+			showCipherError("Небходимо ввести ключ");
 			throw(new IllegalArgumentException());
 		}
 		strCiKey=strKey;
