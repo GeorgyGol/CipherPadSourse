@@ -49,7 +49,7 @@ public class JHelpText extends JEditorPane  {
         	// BufferedInputStream is = (BufferedInputStream) getClass().getResourceAsStream("CipadHelp");
         	BufferedInputStream is = new BufferedInputStream(getClass().getResourceAsStream("CipadHelp"));
         	// InputStream is = (InputStream) getClass().getResourceAsStream("CipadHelp");
-            
+             
             BufferedReader br = new BufferedReader(new InputStreamReader(is, "Cp1251"));
             while (true) {
                 String line =br.readLine();
