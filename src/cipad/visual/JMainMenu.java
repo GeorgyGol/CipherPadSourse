@@ -109,7 +109,7 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 				"������� ����� � ������� ��������� ��������� ����������");
 		sbmCSipher.addActionListener(this);
 		mnCiph.add(sbmCSipher);
-
+/*
 		sbmCUndo=new JMenuItem("Отменить", KeyEvent.VK_Z);
 		sbmCUndo.setActionCommand("ci_undo");
 		sbmCUndo.setAccelerator(KeyStroke.getKeyStroke(
@@ -118,7 +118,7 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 				"������ ���������� ��������");
 		sbmCUndo.addActionListener(this);
 		mnCiph.add(sbmCUndo);
-		
+*/	
 		mnCiph.addSeparator();
 		
 		sbmCNew=new JMenuItem("Новый", KeyEvent.VK_N);
@@ -149,8 +149,7 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 	private void InitExMenu(){
 		mnExit=new JMenuItem("Выxод", KeyEvent.VK_X);
 		mnExit.setActionCommand("exit");
-		mnExit.getAccessibleContext().setAccessibleDescription(
-		        "����� �� ���������");
+
 		mnExit.setAccelerator(KeyStroke.getKeyStroke(
 				KeyEvent.VK_X, ActionEvent.ALT_MASK));
 		mnExit.addActionListener(this);
@@ -162,18 +161,15 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 		mnDeCiph=new JMenu("Дешифратор");
 
 		mnDeCiph.setMnemonic(KeyEvent.VK_A);
-		mnDeCiph.getAccessibleContext().setAccessibleDescription(
-		        "���� ��� ������ � ������ ������������ (������ ��������)");
 		
 		sbmDeSipher=new JMenuItem("Дешифровать", KeyEvent.VK_D);
 		sbmDeSipher.setActionCommand("decipher");
 		sbmDeSipher.setAccelerator(KeyStroke.getKeyStroke(
 		KeyEvent.VK_D, ActionEvent.ALT_MASK));
-		sbmDeSipher.getAccessibleContext().setAccessibleDescription(
-				"��������� ����� � ������ ��������� ��������� ����������");
+		
 		sbmDeSipher.addActionListener(this);
 		mnDeCiph.add(sbmDeSipher);
-
+/*
 		sbmDUndo=new JMenuItem("Отменить", KeyEvent.VK_U);
 		sbmDUndo.setActionCommand("de_undo");
 		sbmDUndo.setAccelerator(KeyStroke.getKeyStroke(
@@ -182,28 +178,22 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 				"������ ���������� ��������");
 		sbmDUndo.addActionListener(this);
 		mnDeCiph.add(sbmDUndo);
-		
+*/		
 		mnDeCiph.addSeparator();
 
 		sbmDNew=new JMenuItem("Новый", KeyEvent.VK_Y);
 		sbmDNew.setActionCommand("de_new");
-		sbmDNew.getAccessibleContext().setAccessibleDescription(
-				"����� ���� � ������ ���������");
 		sbmDNew.addActionListener(this);
 		mnDeCiph.add(sbmDNew);
 		
 		sbmDOpen=new JMenuItem("Открыть", KeyEvent.VK_I);
 		sbmDOpen.setActionCommand("de_open");
-		sbmDOpen.getAccessibleContext().setAccessibleDescription(
-				"������� ���� � ������ ���������");
 		sbmDOpen.addActionListener(this);
 		mnDeCiph.add(sbmDOpen);
 		
 		
 		sbmDSave=new JMenuItem("Сохранить", KeyEvent.VK_J);
 		sbmDSave.setActionCommand("de_save");
-		sbmDSave.getAccessibleContext().setAccessibleDescription(
-				"������� ���� � ������ ���������");
 		sbmDSave.addActionListener(this);
 		mnDeCiph.add(sbmDSave);
 		
@@ -215,8 +205,6 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 		mnSett=new JMenu("Установки");
 
 		mnSett.setMnemonic(KeyEvent.VK_A);
-		mnSett.getAccessibleContext().setAccessibleDescription(
-		        "��������� ����������-������������");
 		
 		//add(mnCiph);
 		
@@ -262,8 +250,7 @@ public class JMainMenu extends JMenuBar implements ActionListener, ItemListener 
 		sbmInputKey.setActionCommand("key");
 		//sbmInputKey.setAccelerator(KeyStroke.getKeyStroke(
 		//KeyEvent.VK_D, ActionEvent.ALT_MASK));
-		sbmInputKey.getAccessibleContext().setAccessibleDescription(
-				"���� ����� ����������-������������");
+
 		sbmInputKey.addActionListener(this);
 		mnSett.add(sbmInputKey);
 		

@@ -48,23 +48,23 @@ public class JTopPanePopupMenu extends JPopupMenu implements ActionListener {
 	
 	public JTopPanePopupMenu(String sType){
 		if(sType.equals(JMainFrame.sTopName)){
-			add(ConstructItem(mnCiDe, "Шифровать", "cipher"));
+			add(ConstructItem(mnCiDe, "РЁРёС„СЂРѕРІР°С‚СЊ", "cipher"));
 		}
 		else {
-			add(ConstructItem(mnCiDe, "Дешифровать", "decipher"));
+			add(ConstructItem(mnCiDe, "Р”РµС€РёС„СЂРѕРІР°С‚СЊ", "decipher"));
 		}
 
 		this.addSeparator();
 		
-		add(mnCut=ConstructItem(mnCut, "Вырезать", "cut"));
+		add(mnCut=ConstructItem(mnCut, "Р’С‹СЂРµР·Р°С‚СЊ", "cut"));
 		//add(DefaultEditorKit.cutAction);
-		add(mnCopy=ConstructItem(mnCopy, "Копировать", "copy"));
-		add(mnPaste=ConstructItem(mnPaste, "Вставить", "paste"));
+		add(mnCopy=ConstructItem(mnCopy, "РљРѕРїРёСЂРѕРІР°С‚СЊ", "copy"));
+		add(mnPaste=ConstructItem(mnPaste, "Р’СЃС‚Р°РІРёС‚СЊ", "paste"));
 		this.addSeparator();
 		
-		add(ConstructItem(mnNew, "Новый", "new"));
-		add(ConstructItem(mnOpen, "Открыть", "open"));
-		add(mnSave=ConstructItem(mnSave, "Сохранить", "save"));
+		add(ConstructItem(mnNew, "РќРѕРІС‹Р№", "new"));
+		add(ConstructItem(mnOpen, "РћС‚РєСЂС‹С‚СЊ", "open"));
+		add(mnSave=ConstructItem(mnSave, "РЎРѕС…СЂР°РЅРёС‚СЊ", "save"));
 		// this.addSeparator();
 		//add(DefaultEditorKit.selectAllAction);
 	}
